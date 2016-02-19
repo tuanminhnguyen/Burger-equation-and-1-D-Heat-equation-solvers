@@ -5,7 +5,7 @@
 ...and a second order central difference in space
 ...for the diffusive term
 
-function [u,x] = burger1dvalid(x0,xf,t0,tf,M,N,nu)
+function [u,x] = Burgers_equation_1D(x0,xf,t0,tf,M,N,nu)
 %%
 %Specifying Parameters
 % nx=20;              %Number of steps in space(x)
