@@ -3,12 +3,13 @@ Solving 1-D Heat Equation and Burger's Equation using Finite Difference Method
 
 ## 1-D Heat equation
 We solve the 1-D heat equation
-
+```math
 \begin{aligned}
 u_t(x,t) &= v u_xx(x,t) + f(x,t) &\forall [x,t] \in [0,1]\times[0,1] \\
  u(0,t) &= u(1,t) = 0 &\forall t \in [0,1] \\
 u(x,0) &= u_0(x)  &\forall x \in [0,1]
 \end{aligned}
+```
 by the implicit Euler's method.
 
 First, we partition the interval of $x$ using $m+1$ equally spaced nodes and the interval of $t$ using $n+1$ equally spaced nodes. At time $t_{j+1}$ we approximate $u_t$ and $u_{xx}$ using the 2-point backward finite difference formula and the 3-point centered finite difference formula, respectively. This gives
